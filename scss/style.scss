@@ -30,14 +30,60 @@ body{
             div{background-color: #E44D26;}
         }
         .css{
-            left: 125px;
-            top: 125px;
+            left: 121px;
+            top: 121px;
             div{background-color: #1A72B9;}
         }
         .js{
             left: 0;
-            top: 250px;
+            top: 242.5px;
             div{background-color: #FFD83A;}
+        }
+        .csharp{
+            left: -100px;
+            top: 121px;
+            div{background-color: #7F3089;}
+        }
+        .php{
+            left: -79px;
+            top: 364px;
+            div{background-color: #484C89;}
+        }
+        .scss{
+            left: 242px;
+            top: 21px;
+            div{background-color: #C95C95;}
+            img{padding-left: 15px;}
+        }
+        .java{
+            left: 79px;
+            top: 364px;
+            div{background-color: silver}
+            img{padding-bottom: 20px;}
+        }
+        .python{
+            left: 0;
+            top: 447px;
+            div{background-color: #ffffff}
+            img{padding-bottom: 10px;}
+        }
+        .cpp{
+            left: 182px;
+            top: 281px;
+            div{background-color: #004482}
+            img{padding-bottom: 5px;}
+        }
+        .git{
+            left: 228px;
+            top: 183px;
+            div{background-color: snow}
+            img{padding-bottom: 5px;}
+        }
+        .gimp{
+            left: 275px;
+            top: 231px;
+            div{background-color: snow}
+            img{padding-bottom: 5px;}
         }
         .tcont{
             transform: translate(-50%,-50%);
@@ -51,7 +97,6 @@ body{
             }
             span{
                 left: 34%;
-                top: 76%;
                 width: 100%;
                 font-size: 10px;
                 transform: rotate(-45deg);
@@ -64,7 +109,7 @@ body{
                 }
             }
             img{
-                margin-top: 15px;
+                margin-top: 5px;
                 display: flex;
                 z-index: 10;
             }
@@ -74,8 +119,26 @@ body{
                 transform: rotate(45deg);
             }
         }
-        .ssmall {width: 90px ;height: 90px ;}
-        .smedium{width: 120px;height: 120px;}
-        .slarge {width: 150px;height: 150px;}
+        .ssmall {
+            width: 90px ;height: 90px;
+            span{
+            top: 70%;
+            }
+        }
+        .smedium{
+            width: 120px;height: 120px;
+            span{
+                top: 72.5%;
+                }
+        }
+        .slarge {
+            width: 150px;height: 150px;
+            span{
+                top: 75%;
+                }
+        }
+        .exsmall {
+            width: 50px;height: 50px;
+        }
     }
 }
