@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
 *{
     margin: 0;padding: 0;margin: 0;
     box-sizing: border-box;
@@ -7,16 +8,24 @@
 body{
     background-color: #1B1717;
 }
+.content{
+    position: absolute;
+    margin-top: 10vh;
+    width: 100vw;
+    background-image: url("/img/bg.jpg");
+    filter: grayscale(100%);
+    opacity: .1;
+    height: 80vh;
+}
 .wrapper{
     width: 100vw;
     display: flex;
     position: absolute;
-    left: 50%;top: 35%;
+    left: 50%;top: 54%;
     transform: translate(-50%,-50%);
     justify-content: center;
     align-items: center;
     width: 0;height: 0;
-    background-color: yellow;
     .techs{
         height: 80vh;
         margin-top: 10vh;
@@ -24,66 +33,126 @@ body{
             height: 20%;
             border: 1px solid;
         }
-        .html{
+        .HTML{
             left: 0px;
             top: 0px;
             div{background-color: #E44D26;}
         }
-        .css{
-            left: 121px;
-            top: 121px;
-            div{background-color: #1A72B9;}
+        .CSS{
+            left: 116px;
+            top: -116px;
+            div{background-color: #2061AF;}
         }
-        .js{
+        .JS{
+            left: -116px;
+            top: 116px;
+            div{background-color: #E6C72F;}
+        }
+        .PHP{
             left: 0;
-            top: 242.5px;
-            div{background-color: #FFD83A;}
-        }
-        .csharp{
-            left: -100px;
-            top: 121px;
-            div{background-color: #7F3089;}
-        }
-        .php{
-            left: -79px;
-            top: 364px;
+            top: 189px;
             div{background-color: #484C89;}
         }
-        .scss{
-            left: 242px;
-            top: 21px;
-            div{background-color: #C95C95;}
-            img{padding-left: 15px;}
+        .SQL{
+            left: 116px;
+            top: 115px;
+            div{background-color: #01AAEB;}
         }
-        .java{
-            left: 79px;
-            top: 364px;
-            div{background-color: silver}
-            img{padding-bottom: 20px;}
+        .workbench{
+            left: 73.8px;
+            top: 234.5px;
         }
-        .python{
-            left: 0;
-            top: 447px;
-            div{background-color: #ffffff}
-            img{padding-bottom: 10px;}
+        .xampp{
+            left: 162px;
+            top: 0;
         }
-        .cpp{
-            left: 182px;
-            top: 281px;
-            div{background-color: #004482}
-            img{padding-bottom: 5px;}
+        .ssms{
+            left: 207.5px;
+            top: 45.5px;
         }
-        .git{
-            left: 228px;
-            top: 183px;
-            div{background-color: snow}
-            img{padding-bottom: 5px;}
+        .sqlserver{
+            left: 250.5px;
+            top: -88.5px;
+            img{
+                margin-bottom: 8px;
+            }
+        }
+        .mysql{
+            left: 206.8px;
+            top: -44.5px;
+        }
+        .postgresql{
+            left: 252.5px;
+            top: 90.5px;
+        }
+        .net{
+            left: -325px;
+            top: -26px;
+        }
+        .vsc{
+            left: -279px;
+            top: -72px;
+            img{margin-right: 5px;}
         }
         .gimp{
-            left: 275px;
-            top: 231px;
-            div{background-color: snow}
-            img{padding-bottom: 5px;}
+            left: -279px;
+            top: -72px;
+        }
+        .scoutapp{
+            left: 7px;
+            top: -262px;
+        }
+        .figma{
+            left: 98px;
+            top: -262px;
+        }
+        .inkscape{
+            left: 52px;
+            top: -217px;
+        }
+        .gimp{
+            left: 52px;
+            top: -306px;
+        }
+        .vs{
+            left: -232px;
+            top: -117px;
+            img{margin-right: 3px;}
+        }
+        .git{
+            left: -187px;
+            top: -162px;
+        }
+        .CSharp{
+            left: -232px;
+            top: 21px;
+            div{background-color: #7F3089;}
+        }
+        .CPP{
+            left: -137px;
+            top: -74px;
+            div{background-color: #004482;}
+        }
+        .SCSS{
+            left: -42px;
+            top: -169px;
+            div{background-color: #C95C95;}
+        }
+        .Java{
+            left: -305px;
+            top: 117px;
+            div{background-color: rgb(243, 243, 243);}
+            img{
+                margin-bottom: 15px;
+            }
+        }
+        .Python{
+            left: -379px;
+            top: 44px;
+            div{background-color: rgb(243, 243, 243);}
+            img{
+                margin-bottom: 10px;
+            }
         }
         .tcont{
             transform: translate(-50%,-50%);
@@ -119,26 +188,52 @@ body{
                 transform: rotate(45deg);
             }
         }
-        .ssmall {
-            width: 90px ;height: 90px;
-            span{
-            top: 70%;
-            }
+        .ssmall {width: 90px ;height: 90px;
+            span{top: 70%;}}
+        .smedium{width: 120px;height: 120px;
+            span{top: 72.5%;}}
+        .slarge {width: 150px;height: 150px;
+            span{top: 75%;}}
+        .exsmall {width: 50px;height: 50px;
+            div{background-color: rgb(255, 255, 255);}}
+    }
+}
+footer{
+    box-shadow: 0 0 25px 15px rgba(8, 136, 187, .3);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    div{
+        color: silver;
+        font-size: 30px;
+        text-transform: capitalize;
+        font-family: 'Josefin Sans', sans-serif;
+        a{
+        color: white;
+        text-decoration: none;
+        text-shadow: 0 0 3px white;
         }
-        .smedium{
-            width: 120px;height: 120px;
-            span{
-                top: 72.5%;
-                }
-        }
-        .slarge {
-            width: 150px;height: 150px;
-            span{
-                top: 75%;
-                }
-        }
-        .exsmall {
-            width: 50px;height: 50px;
-        }
+    }
+}
+header{
+    box-shadow: 0 0 25px 15px rgba(8, 136, 187, .3);
+    position: absolute;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    div{
+        color: silver;
+        font-size: 35px;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-family: 'Josefin Sans', sans-serif;  
     }
 }
